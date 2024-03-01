@@ -71,7 +71,7 @@ def Texto( x, y, texto ):
     for char in texto:
         letra = ord(char)
         if not letra==' ':
-            screen.blit( font, [x,y], [32*mod(letra,16),32*(letra/16),28,32] )
+            screen.blit( font, [x,y], [32*mod(letra,16),32*int(letra/16),28,32] )
         x=x+18
 
 #
